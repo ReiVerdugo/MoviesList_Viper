@@ -22,7 +22,7 @@ class Film {
   var releaseDate: Date?
   var cast: [Actor] = []
   var name = ""
-  var rating: Float = 0
+  var rating: Double = 0
   var director: Director?
   var nominated = false
   
@@ -37,7 +37,7 @@ class Film {
     if let name = data["name"] as? String {
       self.name = name
     }
-    if let rating = data["rating"] as? Float {
+    if let rating = data["rating"] as? Double {
       self.rating = rating
     }
     if let cast = data["cast"] as? [[String: Any]] {

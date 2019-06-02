@@ -16,7 +16,7 @@ class MovieCell: UITableViewCell {
   @IBOutlet weak var ratingLabel: UILabel!
   
   func configure(with film: Film) {
-    
+    nameLabel.text = film.name
+    ratingLabel.text = "\(film.rating)"
   }
-    
 }

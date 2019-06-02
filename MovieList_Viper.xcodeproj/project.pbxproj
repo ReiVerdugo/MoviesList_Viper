@@ -30,6 +30,8 @@
 		C526783D22A424B400523D04 /* MoviesListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783C22A424B400523D04 /* MoviesListInteractorOutput.swift */; };
 		C526783F22A425A500523D04 /* MoviesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783E22A425A500523D04 /* MoviesListInteractor.swift */; };
 		C526784122A4278A00523D04 /* MoviesListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526784022A4278A00523D04 /* MoviesListBuilder.swift */; };
+		C526784322A42A0700523D04 /* Films.json in Resources */ = {isa = PBXBuildFile; fileRef = C526784222A42A0700523D04 /* Films.json */; };
+		C526784522A42B7E00523D04 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526784422A42B7E00523D04 /* DataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		C526783C22A424B400523D04 /* MoviesListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListInteractorOutput.swift; sourceTree = "<group>"; };
 		C526783E22A425A500523D04 /* MoviesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListInteractor.swift; sourceTree = "<group>"; };
 		C526784022A4278A00523D04 /* MoviesListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListBuilder.swift; sourceTree = "<group>"; };
+		C526784222A42A0700523D04 /* Films.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Films.json; sourceTree = "<group>"; };
+		C526784422A42B7E00523D04 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				C52677F422A3D5B600523D04 /* AppDelegate.swift */,
+				C526784422A42B7E00523D04 /* DataLoader.swift */,
 				C526781922A3D83F00523D04 /* Model */,
 				C526781422A3D61700523D04 /* Modules */,
 				C52677F822A3D5B600523D04 /* Main.storyboard */,
@@ -166,6 +171,7 @@
 				C526781A22A3D84F00523D04 /* Actor.swift */,
 				C526781C22A3D8B200523D04 /* Director.swift */,
 				C526781E22A3D93B00523D04 /* Film.swift */,
+				C526784222A42A0700523D04 /* Films.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				C52677FC22A3D5B700523D04 /* Assets.xcassets in Resources */,
 				C526782E22A3EEFB00523D04 /* MovieCell.xib in Resources */,
 				C52677FA22A3D5B600523D04 /* Main.storyboard in Resources */,
+				C526784322A42A0700523D04 /* Films.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +345,7 @@
 				C526781F22A3D93B00523D04 /* Film.swift in Sources */,
 				C526783722A4236500523D04 /* MoviesListRouterInput.swift in Sources */,
 				C526783F22A425A500523D04 /* MoviesListInteractor.swift in Sources */,
+				C526784522A42B7E00523D04 /* DataLoader.swift in Sources */,
 				C526783322A3F66800523D04 /* MoviesListViewController+Delegate.swift in Sources */,
 				C526781B22A3D84F00523D04 /* Actor.swift in Sources */,
 				C526781D22A3D8B200523D04 /* Director.swift in Sources */,

@@ -17,6 +17,7 @@ class MoviesListViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     output.didTriggerViewReady()
+    output.getData()
   }
 }
 
