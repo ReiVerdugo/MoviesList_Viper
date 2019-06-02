@@ -21,6 +21,15 @@
 		C526782A22A3EBDE00523D04 /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526782922A3EBDE00523D04 /* MoviesListViewController.swift */; };
 		C526782D22A3EEFB00523D04 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526782B22A3EEFB00523D04 /* MovieCell.swift */; };
 		C526782E22A3EEFB00523D04 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C526782C22A3EEFB00523D04 /* MovieCell.xib */; };
+		C526783122A3F62F00523D04 /* MoviesListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783022A3F62F00523D04 /* MoviesListViewController+DataSource.swift */; };
+		C526783322A3F66800523D04 /* MoviesListViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783222A3F66800523D04 /* MoviesListViewController+Delegate.swift */; };
+		C526783522A3F71E00523D04 /* MoviesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783422A3F71E00523D04 /* MoviesListPresenter.swift */; };
+		C526783722A4236500523D04 /* MoviesListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783622A4236500523D04 /* MoviesListRouterInput.swift */; };
+		C526783922A423BB00523D04 /* MoviesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783822A423BB00523D04 /* MoviesListRouter.swift */; };
+		C526783B22A4247A00523D04 /* MoviesListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783A22A4247A00523D04 /* MoviesListInteractorInput.swift */; };
+		C526783D22A424B400523D04 /* MoviesListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783C22A424B400523D04 /* MoviesListInteractorOutput.swift */; };
+		C526783F22A425A500523D04 /* MoviesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526783E22A425A500523D04 /* MoviesListInteractor.swift */; };
+		C526784122A4278A00523D04 /* MoviesListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526784022A4278A00523D04 /* MoviesListBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,15 @@
 		C526782922A3EBDE00523D04 /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
 		C526782B22A3EEFB00523D04 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		C526782C22A3EEFB00523D04 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		C526783022A3F62F00523D04 /* MoviesListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoviesListViewController+DataSource.swift"; sourceTree = "<group>"; };
+		C526783222A3F66800523D04 /* MoviesListViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoviesListViewController+Delegate.swift"; sourceTree = "<group>"; };
+		C526783422A3F71E00523D04 /* MoviesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListPresenter.swift; sourceTree = "<group>"; };
+		C526783622A4236500523D04 /* MoviesListRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRouterInput.swift; sourceTree = "<group>"; };
+		C526783822A423BB00523D04 /* MoviesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRouter.swift; sourceTree = "<group>"; };
+		C526783A22A4247A00523D04 /* MoviesListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListInteractorInput.swift; sourceTree = "<group>"; };
+		C526783C22A424B400523D04 /* MoviesListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListInteractorOutput.swift; sourceTree = "<group>"; };
+		C526783E22A425A500523D04 /* MoviesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListInteractor.swift; sourceTree = "<group>"; };
+		C526784022A4278A00523D04 /* MoviesListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +176,8 @@
 				C526782522A3EA7900523D04 /* MoviesListViewInput.swift */,
 				C526782722A3EAD300523D04 /* MoviesListViewOutput.swift */,
 				C526782922A3EBDE00523D04 /* MoviesListViewController.swift */,
+				C526783022A3F62F00523D04 /* MoviesListViewController+DataSource.swift */,
+				C526783222A3F66800523D04 /* MoviesListViewController+Delegate.swift */,
 				C526782F22A3EF0600523D04 /* Cell */,
 			);
 			path = View;
@@ -166,6 +186,9 @@
 		C526782122A3EA0800523D04 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				C526783A22A4247A00523D04 /* MoviesListInteractorInput.swift */,
+				C526783C22A424B400523D04 /* MoviesListInteractorOutput.swift */,
+				C526783E22A425A500523D04 /* MoviesListInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -173,6 +196,7 @@
 		C526782222A3EA1100523D04 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C526783422A3F71E00523D04 /* MoviesListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -180,6 +204,8 @@
 		C526782322A3EA2000523D04 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				C526783622A4236500523D04 /* MoviesListRouterInput.swift */,
+				C526783822A423BB00523D04 /* MoviesListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -187,6 +213,7 @@
 		C526782422A3EA2700523D04 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				C526784022A4278A00523D04 /* MoviesListBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -302,15 +329,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C526783B22A4247A00523D04 /* MoviesListInteractorInput.swift in Sources */,
 				C526782822A3EAD300523D04 /* MoviesListViewOutput.swift in Sources */,
+				C526784122A4278A00523D04 /* MoviesListBuilder.swift in Sources */,
+				C526783922A423BB00523D04 /* MoviesListRouter.swift in Sources */,
 				C526782622A3EA7900523D04 /* MoviesListViewInput.swift in Sources */,
 				C526782D22A3EEFB00523D04 /* MovieCell.swift in Sources */,
 				C526781F22A3D93B00523D04 /* Film.swift in Sources */,
+				C526783722A4236500523D04 /* MoviesListRouterInput.swift in Sources */,
+				C526783F22A425A500523D04 /* MoviesListInteractor.swift in Sources */,
+				C526783322A3F66800523D04 /* MoviesListViewController+Delegate.swift in Sources */,
 				C526781B22A3D84F00523D04 /* Actor.swift in Sources */,
 				C526781D22A3D8B200523D04 /* Director.swift in Sources */,
+				C526783122A3F62F00523D04 /* MoviesListViewController+DataSource.swift in Sources */,
 				C52677F522A3D5B600523D04 /* AppDelegate.swift in Sources */,
+				C526783D22A424B400523D04 /* MoviesListInteractorOutput.swift in Sources */,
 				C526781822A3D67E00523D04 /* GenericRole.swift in Sources */,
 				C526782A22A3EBDE00523D04 /* MoviesListViewController.swift in Sources */,
+				C526783522A3F71E00523D04 /* MoviesListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,10 +6,8 @@
 //  Copyright © 2019 DMI. All rights reserved.
 //
 
-import Foundation
-
 protocol MoviesListViewInput: class {
   func setupInitialState()
   func setupView()
-  func showData(data: Array<Any>)
+  func showData(data: [Any])
 }

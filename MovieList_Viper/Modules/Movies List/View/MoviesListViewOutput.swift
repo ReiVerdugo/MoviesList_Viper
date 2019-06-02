@@ -11,5 +11,5 @@ import UIKit
 protocol MoviesListViewOutput {
   func didTriggerViewReady()
   func getData()
-  func showMovieDetail(on: UINavigationController, data: Any)
+  func showMovieDetail(on navController: UINavigationController, data: Any)
 }

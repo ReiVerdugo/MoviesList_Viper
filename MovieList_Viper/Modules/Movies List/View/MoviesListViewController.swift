@@ -6,7 +6,6 @@
 //  Copyright © 2019 DMI. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class MoviesListViewController: UIViewController {
@@ -17,6 +16,7 @@ class MoviesListViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    output.didTriggerViewReady()
   }
 }
 
@@ -36,30 +36,11 @@ extension MoviesListViewController: MoviesListViewInput {
       forCellReuseIdentifier: "MovieCell")
   }
   
-  func showData(data: Array<Any>) {
+  func showData(data: [Any]) {
     DispatchQueue.main.async {
       guard let data = data as? [Film] else { return }
       self.films = data
       self.tableView.reloadData()
     }
-  }
-}
-
-extension MoviesListViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return films.count
-  }
-  
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
-    let film = films[indexPath.row]
-    cell.configure(with: film)
-    return cell
-  }
-}
-
-extension MoviesListViewController: UITableViewDelegate {
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
   }
 }
