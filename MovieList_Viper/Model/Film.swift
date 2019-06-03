@@ -8,16 +8,27 @@
 
 import Foundation
 
-enum FilmRating: Int {
-  case G = 0
+enum FilmRating: String {
+  case G
   case PG
   case PG13
   case R
   case NC17
+  
+  init?(number: Int) {
+    switch number {
+    case 0: self = .G
+    case 1: self = .PG
+    case 2: self = .R
+    case 3: self = .NC17
+    default:
+      return nil
+    }
+  }
 }
 
 class Film {
-  var filmRating: FilmRating = .G
+  var filmRating: FilmRating?
   var languages: [String] = []
   var releaseDate: Date?
   var cast: [Actor] = []
@@ -28,10 +39,11 @@ class Film {
   
   init(with data: [String: Any]) {
     if let rating = data["filmRating"] as? Int,
-      let filmRating = FilmRating.init(rawValue: rating) {
+      let filmRating = FilmRating.init(number: rating) {
       self.filmRating = filmRating
     }
-    if let releaseDate = data["releaseDate"] as? Date {
+    if let dateDouble = data["releaseDate"] as? Double {
+      let releaseDate = Date(timeIntervalSince1970: dateDouble)
       self.releaseDate = releaseDate
     }
     if let name = data["name"] as? String {

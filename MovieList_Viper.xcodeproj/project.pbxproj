@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5150A5522A4F98C00AB53A2 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A5422A4F98C00AB53A2 /* DateFormatterHelper.swift */; };
 		C52677F522A3D5B600523D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52677F422A3D5B600523D04 /* AppDelegate.swift */; };
 		C52677FA22A3D5B600523D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52677F822A3D5B600523D04 /* Main.storyboard */; };
 		C52677FC22A3D5B700523D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52677FB22A3D5B700523D04 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5150A5422A4F98C00AB53A2 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		C52677F122A3D5B600523D04 /* MovieList_Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList_Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52677F422A3D5B600523D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C52677F922A3D5B600523D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C52677F422A3D5B600523D04 /* AppDelegate.swift */,
-				C526784422A42B7E00523D04 /* DataLoader.swift */,
+				C526784622A4301000523D04 /* Utils */,
 				C526781922A3D83F00523D04 /* Model */,
 				C526781422A3D61700523D04 /* Modules */,
 				C52677F822A3D5B600523D04 /* Main.storyboard */,
@@ -233,6 +235,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C526784622A4301000523D04 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C526784422A42B7E00523D04 /* DataLoader.swift */,
+				C5150A5422A4F98C00AB53A2 /* DateFormatterHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,6 +353,7 @@
 				C526783922A423BB00523D04 /* MoviesListRouter.swift in Sources */,
 				C526782622A3EA7900523D04 /* MoviesListViewInput.swift in Sources */,
 				C526782D22A3EEFB00523D04 /* MovieCell.swift in Sources */,
+				C5150A5522A4F98C00AB53A2 /* DateFormatterHelper.swift in Sources */,
 				C526781F22A3D93B00523D04 /* Film.swift in Sources */,
 				C526783722A4236500523D04 /* MoviesListRouterInput.swift in Sources */,
 				C526783F22A425A500523D04 /* MoviesListInteractor.swift in Sources */,

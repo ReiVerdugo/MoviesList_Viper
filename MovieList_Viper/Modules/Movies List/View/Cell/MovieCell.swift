@@ -18,5 +18,12 @@ class MovieCell: UITableViewCell {
   func configure(with film: Film) {
     nameLabel.text = film.name
     ratingLabel.text = "\(film.rating)"
+    if let date = film.releaseDate {
+      dateLabel.text = DateFormatterHelper
+        .getString(from: date, using: "dd MMM yyyy")
+    }
+    if let filmRating = film.filmRating {
+      ratingLabel.text = filmRating.rawValue
+    }
   }
 }
