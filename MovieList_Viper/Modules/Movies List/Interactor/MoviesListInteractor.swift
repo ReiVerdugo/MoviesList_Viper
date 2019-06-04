@@ -24,7 +24,7 @@ extension MoviesListInteractor: MoviesListInteractorInput {
 private extension MoviesListInteractor {
   func fetchFilms(completion: @escaping ([Any]) -> ()) {
     DispatchQueue.global().async {
-      guard let json = DataLoader.loadJsonFromFile(fileName: "Films"),
+      guard let json = DataLoader.loadJson(fromFile: "Films"),
       let filmDictionary = json["films"] as? [[String: Any]] else { return }
       var films: [Film] = []
       for dictionary in filmDictionary {

@@ -15,11 +15,13 @@
 		C5150A6122A5F5CE00AB53A2 /* DetailsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A6022A5F5CE00AB53A2 /* DetailsModuleBuilder.swift */; };
 		C5150A6422A5F61600AB53A2 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A6322A5F61600AB53A2 /* DetailsInteractor.swift */; };
 		C5150A6622A5F63100AB53A2 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A6522A5F63100AB53A2 /* DetailsRouter.swift */; };
+		C5150A6A22A5FB8800AB53A2 /* DetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A6922A5FB8800AB53A2 /* DetailsViewTests.swift */; };
+		C5150A6D22A5FC7100AB53A2 /* DetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A6C22A5FC7100AB53A2 /* DetailsPresenterTests.swift */; };
+		C5150A7222A5FE1900AB53A2 /* DetailsModuleBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A7122A5FE1900AB53A2 /* DetailsModuleBuilderTests.swift */; };
 		C52677F522A3D5B600523D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52677F422A3D5B600523D04 /* AppDelegate.swift */; };
 		C52677FA22A3D5B600523D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52677F822A3D5B600523D04 /* Main.storyboard */; };
 		C52677FC22A3D5B700523D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52677FB22A3D5B700523D04 /* Assets.xcassets */; };
 		C52677FF22A3D5B700523D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52677FD22A3D5B700523D04 /* LaunchScreen.storyboard */; };
-		C526780A22A3D5B700523D04 /* MovieList_ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526780922A3D5B700523D04 /* MovieList_ViperTests.swift */; };
 		C526781822A3D67E00523D04 /* GenericRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526781722A3D67E00523D04 /* GenericRole.swift */; };
 		C526781B22A3D84F00523D04 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526781A22A3D84F00523D04 /* Actor.swift */; };
 		C526781D22A3D8B200523D04 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526781C22A3D8B200523D04 /* Director.swift */; };
@@ -61,6 +63,9 @@
 		C5150A6022A5F5CE00AB53A2 /* DetailsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleBuilder.swift; sourceTree = "<group>"; };
 		C5150A6322A5F61600AB53A2 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		C5150A6522A5F63100AB53A2 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		C5150A6922A5FB8800AB53A2 /* DetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewTests.swift; sourceTree = "<group>"; };
+		C5150A6C22A5FC7100AB53A2 /* DetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterTests.swift; sourceTree = "<group>"; };
+		C5150A7122A5FE1900AB53A2 /* DetailsModuleBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleBuilderTests.swift; sourceTree = "<group>"; };
 		C52677F122A3D5B600523D04 /* MovieList_Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList_Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52677F422A3D5B600523D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C52677F922A3D5B600523D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +73,6 @@
 		C52677FE22A3D5B700523D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C526780022A3D5B700523D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C526780522A3D5B700523D04 /* MovieList_ViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieList_ViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C526780922A3D5B700523D04 /* MovieList_ViperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList_ViperTests.swift; sourceTree = "<group>"; };
 		C526780B22A3D5B700523D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C526781722A3D67E00523D04 /* GenericRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRole.swift; sourceTree = "<group>"; };
 		C526781A22A3D84F00523D04 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
@@ -152,6 +156,48 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		C5150A6B22A5FBC900AB53A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5150A6922A5FB8800AB53A2 /* DetailsViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5150A6E22A5FDCE00AB53A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C5150A6C22A5FC7100AB53A2 /* DetailsPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C5150A6F22A5FDD700AB53A2 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				C5150A7322A5FEA700AB53A2 /* Builder */,
+				C5150A6E22A5FDCE00AB53A2 /* Presenter */,
+				C5150A6B22A5FBC900AB53A2 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		C5150A7022A5FDE100AB53A2 /* ModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5150A6F22A5FDD700AB53A2 /* Details */,
+			);
+			path = ModuleTests;
+			sourceTree = "<group>";
+		};
+		C5150A7322A5FEA700AB53A2 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				C5150A7122A5FE1900AB53A2 /* DetailsModuleBuilderTests.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		C52677E822A3D5B600523D04 = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +234,7 @@
 		C526780822A3D5B700523D04 /* MovieList_ViperTests */ = {
 			isa = PBXGroup;
 			children = (
-				C526780922A3D5B700523D04 /* MovieList_ViperTests.swift */,
+				C5150A7022A5FDE100AB53A2 /* ModuleTests */,
 				C526780B22A3D5B700523D04 /* Info.plist */,
 			);
 			path = MovieList_ViperTests;
@@ -218,9 +264,9 @@
 		C526781622A3D63D00523D04 /* Movies Details */ = {
 			isa = PBXGroup;
 			children = (
+				C5150A6222A5F5D400AB53A2 /* Builder */,
 				C5150A5F22A5F5A000AB53A2 /* Presenter */,
 				C5150A5C22A5F4A400AB53A2 /* View */,
-				C5150A6222A5F5D400AB53A2 /* Builder */,
 				C5150A6722A5F64300AB53A2 /* Interactor */,
 				C5150A6822A5F64A00AB53A2 /* Router */,
 			);
@@ -442,7 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C526780A22A3D5B700523D04 /* MovieList_ViperTests.swift in Sources */,
+				C5150A6A22A5FB8800AB53A2 /* DetailsViewTests.swift in Sources */,
+				C5150A6D22A5FC7100AB53A2 /* DetailsPresenterTests.swift in Sources */,
+				C5150A7222A5FE1900AB53A2 /* DetailsModuleBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

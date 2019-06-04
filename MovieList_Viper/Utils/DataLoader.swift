@@ -9,7 +9,7 @@
 import Foundation
 
 class DataLoader {
-  class func loadJsonFromFile(fileName: String) -> [String: Any]? {
+  class func loadJson(fromFile fileName: String) -> [String: Any]? {
     guard let path = Bundle(for: self)
       .path(forResource: fileName, ofType: "json"),
       let data = NSData.init(contentsOfFile: path) else { return nil }
