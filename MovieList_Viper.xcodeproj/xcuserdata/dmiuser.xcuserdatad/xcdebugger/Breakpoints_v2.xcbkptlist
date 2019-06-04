@@ -10,12 +10,140 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieList_Viper/Modules/Movies List/View/Cell/MovieCell.swift"
-            timestampString = "581303959.460568"
+            timestampString = "581312474.191792"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "configure(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieList_Viper/Modules/Movies List/Interactor/MoviesListInteractor.swift"
+            timestampString = "581312474.1918629"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieList_Viper.MoviesListInteractor.fetchData() -&gt; ()"
+                  moduleName = "MovieList_Viper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rverdugo/Documents/Courses/MovieList_Viper/MovieList_Viper/Modules/Movies%20List/Interactor/MoviesListInteractor.swift"
+                  timestampString = "581312375.028257"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Any&gt;) -&gt; () in MovieList_Viper.MoviesListInteractor.fetchData() -&gt; ()"
+                  moduleName = "MovieList_Viper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rverdugo/Documents/Courses/MovieList_Viper/MovieList_Viper/Modules/Movies%20List/Interactor/MoviesListInteractor.swift"
+                  timestampString = "581312375.030706"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieList_Viper/Modules/Movies List/Interactor/MoviesListInteractor.swift"
+            timestampString = "581312474.191919"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieList_Viper/Modules/Movies List/Interactor/MoviesListInteractor.swift"
+            timestampString = "581312474.191969"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchFilms(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieList_Viper.MoviesListInteractor.(fetchFilms in _83750486AA9825D34344973AC5DDA198)(completion: (Swift.Array&lt;Any&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MovieList_Viper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rverdugo/Documents/Courses/MovieList_Viper/MovieList_Viper/Modules/Movies%20List/Interactor/MoviesListInteractor.swift"
+                  timestampString = "581312375.042787"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MovieList_Viper.MoviesListInteractor.(fetchFilms in _83750486AA9825D34344973AC5DDA198)(completion: (Swift.Array&lt;Any&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MovieList_Viper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rverdugo/Documents/Courses/MovieList_Viper/MovieList_Viper/Modules/Movies%20List/Interactor/MoviesListInteractor.swift"
+                  timestampString = "581312375.045065"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieList_Viper/Modules/Movies List/View/MoviesListViewController.swift"
+            timestampString = "581312474.1920201"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

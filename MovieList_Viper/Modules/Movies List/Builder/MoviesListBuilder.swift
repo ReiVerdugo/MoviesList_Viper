@@ -9,7 +9,7 @@
 import UIKit
 
 class MoviesListBuilder {
-  func build() -> UIViewController {
+  func build() -> MoviesListViewController {
     let viewController = UIStoryboard.init(name: "Main", bundle: nil)
       .instantiateInitialViewController() as! MoviesListViewController
     

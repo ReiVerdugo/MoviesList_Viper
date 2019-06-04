@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    if NSClassFromString("XCTestCase") != nil {
+      window?.rootViewController = UIViewController()
+      return true
+    }
     let builder = MoviesListBuilder()
     let controller = builder.build()
     let navigationController = UINavigationController()
