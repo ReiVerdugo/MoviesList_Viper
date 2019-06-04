@@ -50,11 +50,14 @@ class DetailsViewController: UIViewController, DetailsViewInput {
     label.text = text
     y += 50
   }
+  
+  func hideButton() {
+    tapToShowMore.isHidden = true
+  }
 }
 
 extension DetailsViewController {
   @objc func showMoreTapped() {
-    tapToShowMore.isHidden = true
     output.showMoreTapped()
   }
 }

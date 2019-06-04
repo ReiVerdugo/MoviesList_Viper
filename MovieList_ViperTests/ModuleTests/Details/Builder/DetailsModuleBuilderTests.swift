@@ -15,10 +15,7 @@ class DetailsModuleBuilderTests: XCTestCase {
   func testBuildViewController() {
     
     // Given
-    let builder = DetailsModuleBuilder()
-    
-    // When
-    let viewController = builder.build(with: Film(with: [:]))
+    let viewController = DetailsModuleBuilder.build(with: Film(with: [:]))
     
     // Then
     XCTAssertNotNil(viewController.output)

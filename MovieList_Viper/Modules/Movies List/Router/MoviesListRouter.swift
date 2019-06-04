@@ -14,8 +14,7 @@ class MoviesListRouter {
 
 extension MoviesListRouter: MoviesListRouterInput {
   func pushToDetailVC(on navigationController: UINavigationController, data: Any) {
-    let detailsBuilder = DetailsModuleBuilder()
-    let detailsVC = detailsBuilder.build(with: data)
+    let detailsVC = DetailsModuleBuilder.build(with: data)
     navigationController.pushViewController(detailsVC, animated: true)
   }
 }

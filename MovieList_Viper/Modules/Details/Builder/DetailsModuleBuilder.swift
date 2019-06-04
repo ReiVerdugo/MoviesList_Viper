@@ -9,7 +9,7 @@
 import Foundation
 
 class DetailsModuleBuilder {
-  func build(with data: Any) -> DetailsViewController {
+  class func build(with data: Any) -> DetailsViewController {
     
     let viewController = DetailsViewController()
     

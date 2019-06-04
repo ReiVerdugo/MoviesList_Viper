@@ -12,4 +12,5 @@ protocol DetailsViewInput: class {
   func setupView()
   func addLabel(with text: String)
   func setupButton(with text: String)
+  func hideButton()
 }

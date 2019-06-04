@@ -75,11 +75,17 @@ class DetailsPresenterTests: XCTestCase {
     // Then
     XCTAssertTrue(view.addLabelDidCalled)
     XCTAssertEqual(view.numberOfTimesAddLabelWasCalled, 4)
+    XCTAssertTrue(view.hideButtonDidCalled)
   }
   
   // MARK: - Mock
   
   class MockView: DetailsViewInput {
+    var hideButtonDidCalled = false
+    func hideButton() {
+      hideButtonDidCalled = true
+    }
+    
     var setupViewDidCalled = false
     func setupView() {
       setupViewDidCalled = true

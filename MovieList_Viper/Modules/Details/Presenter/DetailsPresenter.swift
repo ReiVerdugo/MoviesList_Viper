@@ -28,6 +28,7 @@ extension DetailsPresenter: DetailsViewOutput {
   }
   
   func showMoreTapped() {
+    view.hideButton()
     guard let cast = film?.cast else { return }
     // TODO: Handle scrolling when there are many actors in cast
     for actor in cast {
