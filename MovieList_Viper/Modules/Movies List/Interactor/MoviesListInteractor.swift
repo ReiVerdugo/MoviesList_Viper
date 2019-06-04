@@ -9,7 +9,7 @@
 import Foundation
 
 class MoviesListInteractor {
-  var output: MoviesListInteractorOutput!
+  weak var output: MoviesListInteractorOutput!
 }
 
 extension MoviesListInteractor: MoviesListInteractorInput {

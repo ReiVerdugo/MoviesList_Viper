@@ -19,8 +19,9 @@ enum FilmRating: String {
     switch number {
     case 0: self = .G
     case 1: self = .PG
-    case 2: self = .R
-    case 3: self = .NC17
+    case 2: self = .PG13
+    case 3: self = .R
+    case 4: self = .NC17
     default:
       return nil
     }

@@ -10,6 +10,8 @@ import UIKit
 
 extension MoviesListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
+    guard let navigationController = navigationController else { return }
+    let film = films[indexPath.row]
+    output.showMovieDetail(on: navigationController, data: film)
   }
 }

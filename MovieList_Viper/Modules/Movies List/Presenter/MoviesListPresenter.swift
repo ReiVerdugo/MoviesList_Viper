@@ -9,7 +9,7 @@
 import UIKit
 
 class MoviesListPresenter {
-  var view: MoviesListViewInput!
+  weak var view: MoviesListViewInput!
   var router: MoviesListRouterInput!
   var interactor: MoviesListInteractorInput!
 }

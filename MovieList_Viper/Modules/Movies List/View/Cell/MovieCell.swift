@@ -23,7 +23,8 @@ class MovieCell: UITableViewCell {
         .getString(from: date, using: "dd MMM yyyy")
     }
     if let filmRating = film.filmRating {
-      ratingLabel.text = filmRating.rawValue
+      filmRatingLabel.text = filmRating.rawValue
     }
+    selectionStyle = .none
   }
 }
