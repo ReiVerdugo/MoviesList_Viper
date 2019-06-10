@@ -12,18 +12,18 @@ import MovieList_Viper
 
 class MoviesListViewControllerTests: XCTestCase {
   var controller: MoviesListViewController!
-  var mockOutput: MockOutput!
+  var presenter: MockViewToPresenter!
   
   override func setUp() {
     super.setUp()
     controller = MoviesListViewController()
-    mockOutput = MockOutput()
-    controller.presenter = mockOutput
+    presenter = MockViewToPresenter()
+    controller.presenter = presenter
   }
 
   override func tearDown() {
     controller = nil
-    mockOutput = nil
+    presenter = nil
     super.tearDown()
   }
   
@@ -32,11 +32,11 @@ class MoviesListViewControllerTests: XCTestCase {
     controller.viewDidLoad()
     
     // Then
-    XCTAssertTrue(mockOutput.didTriggerViewReadyCalled)
+    XCTAssertTrue(presenter.didTriggerViewReadyCalled)
   }
 }
 
-class MockOutput: MoviesListViewToPresenterProtocol {
+class MockViewToPresenter: MoviesListViewToPresenterProtocol {
   
   var didTriggerViewReadyCalled = false
   func didTriggerViewReady() {

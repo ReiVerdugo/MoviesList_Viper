@@ -12,13 +12,13 @@ import MovieList_Viper
 
 class MoviesListPresenterTests: XCTestCase {
   var presenter: MoviesListPresenter!
-  var mockInteractor: MockInteractor!
+  var mockInteractor: MockPresenterToInteractor!
   var mockRouter: MockRouter!
   var mockView: MockView!
   
   override func setUp() {
     presenter = MoviesListPresenter()
-    mockInteractor = MockInteractor()
+    mockInteractor = MockPresenterToInteractor()
     mockRouter = MockRouter()
     mockView = MockView()
     presenter.interactor = mockInteractor
@@ -69,7 +69,7 @@ class MoviesListPresenterTests: XCTestCase {
   }
 }
 
-class MockInteractor: MoviesListPresenterToInteractorProtocol {
+class MockPresenterToInteractor: MoviesListPresenterToInteractorProtocol {
   var fetchDataCalled = false
   func fetchData() {
     fetchDataCalled = true

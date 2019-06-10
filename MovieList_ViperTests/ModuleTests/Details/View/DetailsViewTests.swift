@@ -12,20 +12,20 @@ import MovieList_Viper
 
 class DetailsViewTests: XCTestCase {
   
-  var output: MockOutput!
+  var presenter: MockViewToPresenter!
   var viewController: DetailsViewController!
   
   override func setUp() {
     super.setUp()
     
-    output = MockOutput()
+    presenter = MockViewToPresenter()
     
     viewController = DetailsViewController()
-    viewController.output = output
+    viewController.output = presenter
   }
   
   override func tearDown() {
-    output = nil
+    presenter = nil
     viewController = nil
     
     super.tearDown()
@@ -36,7 +36,7 @@ class DetailsViewTests: XCTestCase {
     viewController.viewDidLoad()
     
     // Then
-    XCTAssertTrue(output.viewIsReadyDidCall)
+    XCTAssertTrue(presenter.viewIsReadyDidCall)
   }
   
   func testThatControllerNotifiesPresenterOnLabelTapped() {
@@ -47,12 +47,12 @@ class DetailsViewTests: XCTestCase {
     viewController.showMoreTapped()
     
     // Then
-    XCTAssertTrue(output.showMoreTappedDidCall)
+    XCTAssertTrue(presenter.showMoreTappedDidCall)
   }
   
   // MARK: - Mock
   
-  class MockOutput: DetailsViewToPresenterProtocol {
+  class MockViewToPresenter: DetailsViewToPresenterProtocol {
     var showMoreTappedDidCall = false
     func showMoreTapped() {
       showMoreTappedDidCall = true

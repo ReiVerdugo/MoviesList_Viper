@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C5150A5522A4F98C00AB53A2 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A5422A4F98C00AB53A2 /* DateFormatterHelper.swift */; };
 		C5150A5722A5F35900AB53A2 /* DetailsPresenterToViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A5622A5F35900AB53A2 /* DetailsPresenterToViewProtocol.swift */; };
-		C5150A5922A5F3CC00AB53A2 /* DetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A5822A5F3CC00AB53A2 /* DetailViewOutput.swift */; };
+		C5150A5922A5F3CC00AB53A2 /* DetailsViewToPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A5822A5F3CC00AB53A2 /* DetailsViewToPresenterProtocol.swift */; };
 		C5150A5B22A5F40B00AB53A2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A5A22A5F40B00AB53A2 /* DetailsViewController.swift */; };
 		C5150A5E22A5F4F500AB53A2 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A5D22A5F4F500AB53A2 /* DetailsPresenter.swift */; };
 		C5150A6122A5F5CE00AB53A2 /* DetailsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5150A6022A5F5CE00AB53A2 /* DetailsModuleBuilder.swift */; };
@@ -61,7 +61,7 @@
 /* Begin PBXFileReference section */
 		C5150A5422A4F98C00AB53A2 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		C5150A5622A5F35900AB53A2 /* DetailsPresenterToViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterToViewProtocol.swift; sourceTree = "<group>"; };
-		C5150A5822A5F3CC00AB53A2 /* DetailViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewOutput.swift; sourceTree = "<group>"; };
+		C5150A5822A5F3CC00AB53A2 /* DetailsViewToPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewToPresenterProtocol.swift; sourceTree = "<group>"; };
 		C5150A5A22A5F40B00AB53A2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		C5150A5D22A5F4F500AB53A2 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
 		C5150A6022A5F5CE00AB53A2 /* DetailsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleBuilder.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		C5150A5F22A5F5A000AB53A2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				C5150A5822A5F3CC00AB53A2 /* DetailViewOutput.swift */,
+				C5150A5822A5F3CC00AB53A2 /* DetailsViewToPresenterProtocol.swift */,
 				C5150A5D22A5F4F500AB53A2 /* DetailsPresenter.swift */,
 			);
 			path = Presenter;
@@ -511,7 +511,7 @@
 				C526783F22A425A500523D04 /* MoviesListInteractor.swift in Sources */,
 				C5150A5722A5F35900AB53A2 /* DetailsPresenterToViewProtocol.swift in Sources */,
 				C526784522A42B7E00523D04 /* DataLoader.swift in Sources */,
-				C5150A5922A5F3CC00AB53A2 /* DetailViewOutput.swift in Sources */,
+				C5150A5922A5F3CC00AB53A2 /* DetailsViewToPresenterProtocol.swift in Sources */,
 				C526783322A3F66800523D04 /* MoviesListViewController+Delegate.swift in Sources */,
 				C526781B22A3D84F00523D04 /* Actor.swift in Sources */,
 				C526781D22A3D8B200523D04 /* Director.swift in Sources */,
