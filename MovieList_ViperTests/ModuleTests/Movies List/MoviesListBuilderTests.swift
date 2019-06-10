@@ -20,19 +20,16 @@ class MoviesListBuilderTests: XCTestCase {
     let viewController = builder.build()
     
     // Then
-    XCTAssertNotNil(viewController.output)
-    XCTAssertTrue(viewController.output is MoviesListPresenter)
+    XCTAssertNotNil(viewController.presenter)
+    XCTAssertTrue(viewController.presenter is MoviesListPresenter)
     
-    let presenter = viewController.output as! MoviesListPresenter
+    let presenter = viewController.presenter as! MoviesListPresenter
     XCTAssertNotNil(presenter.view)
     XCTAssertNotNil(presenter.router)
     XCTAssertTrue(presenter.router is MoviesListRouter)
     
     let interactor = presenter.interactor as! MoviesListInteractor
     XCTAssertNotNil(interactor.output)
-    
-    let router = presenter.router as! MoviesListRouter
-    XCTAssertNotNil(router.viewController)
   }
   
   

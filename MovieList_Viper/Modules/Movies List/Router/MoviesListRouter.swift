@@ -8,11 +8,9 @@
 
 import UIKit
 
-class MoviesListRouter {
-  weak var viewController: UIViewController!
-}
+class MoviesListRouter {}
 
-extension MoviesListRouter: MoviesListRouterInput {
+extension MoviesListRouter: MoviesListPresenterToRouterProtocol {
   func pushToDetailVC(on navigationController: UINavigationController, data: Any) {
     let detailsVC = DetailsModuleBuilder.build(with: data)
     navigationController.pushViewController(detailsVC, animated: true)

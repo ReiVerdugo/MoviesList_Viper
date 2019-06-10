@@ -9,18 +9,15 @@
 import UIKit
 
 class MoviesListPresenter {
-  weak var view: MoviesListViewInput!
-  var router: MoviesListRouterInput!
-  var interactor: MoviesListInteractorInput!
+  weak var view: MoviesListPresenterToViewProtocol!
+  var router: MoviesListPresenterToRouterProtocol!
+  var interactor: MoviesListPresenterToInteractorProtocol!
 }
 
-extension MoviesListPresenter: MoviesListViewOutput {
+extension MoviesListPresenter: MoviesListViewToPresenterProtocol {
   func didTriggerViewReady() {
     view.setupInitialState()
     view.setupView()
-  }
-  
-  func getData() {
     interactor.fetchData()
   }
   
@@ -29,7 +26,7 @@ extension MoviesListPresenter: MoviesListViewOutput {
   }
 }
 
-extension MoviesListPresenter: MoviesListInteractorOutput {
+extension MoviesListPresenter: MoviesListInteractorToPresenterProtocol {
   func fetchedData(data: [Any]) {
     view.showData(data: data)
   }

@@ -10,12 +10,12 @@ import Foundation
 
 class DetailsPresenter {
   
-  weak var view: DetailsViewInput!
+  weak var view: DetailsPresenterToViewProtocol!
   var film: Film?
 }
 
-// MARK: - DetailsViewOutput
-extension DetailsPresenter: DetailsViewOutput {
+// MARK: - DetailsViewToPresenterProtocol
+extension DetailsPresenter: DetailsViewToPresenterProtocol {
   
   
   func viewIsReady() {

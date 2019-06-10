@@ -14,7 +14,6 @@ class MoviesListBuilder {
       .instantiateInitialViewController() as! MoviesListViewController
     
     let router = MoviesListRouter()
-    router.viewController = viewController
     
     let presenter = MoviesListPresenter()
     presenter.view = viewController
@@ -23,7 +22,7 @@ class MoviesListBuilder {
     let interactor = MoviesListInteractor()
     interactor.output = presenter
     presenter.interactor = interactor
-    viewController.output = presenter
+    viewController.presenter = presenter
     
     return viewController
   }

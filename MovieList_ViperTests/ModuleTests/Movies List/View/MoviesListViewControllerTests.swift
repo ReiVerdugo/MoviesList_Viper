@@ -18,7 +18,7 @@ class MoviesListViewControllerTests: XCTestCase {
     super.setUp()
     controller = MoviesListViewController()
     mockOutput = MockOutput()
-    controller.output = mockOutput
+    controller.presenter = mockOutput
   }
 
   override func tearDown() {
@@ -34,26 +34,13 @@ class MoviesListViewControllerTests: XCTestCase {
     // Then
     XCTAssertTrue(mockOutput.didTriggerViewReadyCalled)
   }
-  
-  func testThatControllerRequestDataOnDidLoad() {
-    // When
-    controller.viewDidLoad()
-    
-    // Then
-    XCTAssertTrue(mockOutput.getDetailCalled)
-  }
 }
 
-class MockOutput: MoviesListViewOutput {
+class MockOutput: MoviesListViewToPresenterProtocol {
   
   var didTriggerViewReadyCalled = false
   func didTriggerViewReady() {
     didTriggerViewReadyCalled = true
-  }
-  
-  var getDetailCalled = false
-  func getData() {
-    getDetailCalled = true
   }
   
   var showMovieDetail = false

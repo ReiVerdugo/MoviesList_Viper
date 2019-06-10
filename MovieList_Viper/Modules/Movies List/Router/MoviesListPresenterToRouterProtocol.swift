@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MoviesListRouterInput: class {
+protocol MoviesListPresenterToRouterProtocol: class {
   func pushToDetailVC(on navigationController: UINavigationController,
                       data: Any)
 }

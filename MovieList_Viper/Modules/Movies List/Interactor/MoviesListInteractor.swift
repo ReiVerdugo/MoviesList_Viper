@@ -9,10 +9,10 @@
 import Foundation
 
 class MoviesListInteractor {
-  weak var output: MoviesListInteractorOutput!
+  weak var output: MoviesListInteractorToPresenterProtocol!
 }
 
-extension MoviesListInteractor: MoviesListInteractorInput {
+extension MoviesListInteractor: MoviesListPresenterToInteractorProtocol {
   func fetchData() {
     fetchFilms { [weak self] films in
       guard let strongSelf = self else { return }

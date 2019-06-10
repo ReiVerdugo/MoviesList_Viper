@@ -54,7 +54,7 @@ class MoviesListPresenterTests: XCTestCase {
   
   func testThatInteractorFetchesDataWhenRequested() {
     // When
-    presenter.getData()
+    presenter.didTriggerViewReady()
     
     // Then
      XCTAssertTrue(mockInteractor.fetchDataCalled)
@@ -69,21 +69,21 @@ class MoviesListPresenterTests: XCTestCase {
   }
 }
 
-class MockInteractor: MoviesListInteractorInput {
+class MockInteractor: MoviesListPresenterToInteractorProtocol {
   var fetchDataCalled = false
   func fetchData() {
     fetchDataCalled = true
   }
 }
 
-class MockRouter: MoviesListRouterInput {
+class MockRouter: MoviesListPresenterToRouterProtocol {
   var pushToDetailCalled = false
   func pushToDetailVC(on navigationController: UINavigationController, data: Any) {
     pushToDetailCalled = true
   }
 }
 
-class MockView: MoviesListViewInput {
+class MockView: MoviesListPresenterToViewProtocol {
   var setupInitialStateCalled = false
   func setupInitialState() {
     setupInitialStateCalled = true

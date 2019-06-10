@@ -52,7 +52,7 @@ class DetailsViewTests: XCTestCase {
   
   // MARK: - Mock
   
-  class MockOutput: DetailsViewOutput {
+  class MockOutput: DetailsViewToPresenterProtocol {
     var showMoreTappedDidCall = false
     func showMoreTapped() {
       showMoreTappedDidCall = true

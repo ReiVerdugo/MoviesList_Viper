@@ -80,7 +80,7 @@ class DetailsPresenterTests: XCTestCase {
   
   // MARK: - Mock
   
-  class MockView: DetailsViewInput {
+  class MockView: DetailsPresenterToViewProtocol {
     var hideButtonDidCalled = false
     func hideButton() {
       hideButtonDidCalled = true

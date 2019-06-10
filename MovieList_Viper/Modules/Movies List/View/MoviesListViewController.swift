@@ -11,17 +11,16 @@ import UIKit
 class MoviesListViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
-  var output: MoviesListViewOutput!
+  var presenter: MoviesListViewToPresenterProtocol!
   var films: [Film] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    output.didTriggerViewReady()
-    output.getData()
+    presenter.didTriggerViewReady()
   }
 }
 
-extension MoviesListViewController: MoviesListViewInput {
+extension MoviesListViewController: MoviesListPresenterToViewProtocol {
   func setupInitialState() {
     view.backgroundColor = .white
     navigationItem.title = "Movies List"

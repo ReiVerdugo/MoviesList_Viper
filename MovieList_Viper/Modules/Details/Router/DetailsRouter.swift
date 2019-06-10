@@ -7,6 +7,5 @@
 //
 
 import UIKit
-class DetailsRouter {
-  weak var viewController: UIViewController!
-}
+
+class DetailsRouter {}

@@ -6,7 +6,7 @@
 //  Copyright © 2019 DMI. All rights reserved.
 //
 
-protocol DetailsViewOutput: class {
+protocol DetailsViewToPresenterProtocol: class {
   func viewIsReady()
   func showMoreTapped()
 }

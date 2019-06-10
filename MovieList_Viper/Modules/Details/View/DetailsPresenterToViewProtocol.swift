@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DetailsViewInput: class {
+protocol DetailsPresenterToViewProtocol: class {
   func setupView()
   func addLabel(with text: String)
   func setupButton(with text: String)

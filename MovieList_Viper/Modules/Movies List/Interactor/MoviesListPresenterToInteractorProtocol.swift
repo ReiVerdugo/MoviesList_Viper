@@ -6,6 +6,6 @@
 //  Copyright © 2019 DMI. All rights reserved.
 //
 
-protocol MoviesListInteractorInput: class {
+protocol MoviesListPresenterToInteractorProtocol: class {
   func fetchData()
 }

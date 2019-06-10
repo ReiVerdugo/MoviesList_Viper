@@ -14,7 +14,6 @@ class DetailsModuleBuilder {
     let viewController = DetailsViewController()
     
     let router = DetailsRouter()
-    router.viewController = viewController
     
     let presenter = DetailsPresenter()
     presenter.view = viewController

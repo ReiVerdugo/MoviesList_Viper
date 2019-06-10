@@ -8,8 +8,7 @@
 
 import UIKit
 
-protocol MoviesListViewOutput: class {
+protocol MoviesListViewToPresenterProtocol: class {
   func didTriggerViewReady()
-  func getData()
   func showMovieDetail(on navController: UINavigationController, data: Any)
 }

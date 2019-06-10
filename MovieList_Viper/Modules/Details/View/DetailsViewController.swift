@@ -8,13 +8,13 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController, DetailsViewInput {
+class DetailsViewController: UIViewController, DetailsPresenterToViewProtocol {
   
   let x: CGFloat = 20
   let width: CGFloat = 200
   let height: CGFloat = 30
   
-  var output: DetailsViewOutput!
+  var output: DetailsViewToPresenterProtocol!
   var tapToShowMore: UIButton!
   var y: CGFloat = 100
   

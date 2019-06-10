@@ -6,7 +6,7 @@
 //  Copyright © 2019 DMI. All rights reserved.
 //
 
-protocol MoviesListViewInput: class {
+protocol MoviesListPresenterToViewProtocol: class {
   func setupInitialState()
   func setupView()
   func showData(data: [Any])

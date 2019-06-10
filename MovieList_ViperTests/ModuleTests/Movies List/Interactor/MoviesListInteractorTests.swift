@@ -39,7 +39,7 @@ class MoviesListInteractorTests: XCTestCase {
 
 }
 
-class MockPresenterOutput: MoviesListInteractorOutput {
+class MockPresenterOutput: MoviesListInteractorToPresenterProtocol {
   var fetchedDataCalled = false
   func fetchedData(data: [Any]) {
     fetchedDataCalled = true
